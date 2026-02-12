@@ -7,7 +7,7 @@ DOMAIN_NAME="gbdaws88s.online"
 
 for instance in $@
 do
-   INSTANCE_ID=$( aws ec2 run-instanace \
+   INSTANCE_ID=$( aws ec2 run-instanaces \
   --image-id $AMI_ID \
   --instance-type "t3.micro" \
   --security-group-ids $SG_ID \
